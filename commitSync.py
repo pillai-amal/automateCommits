@@ -6,13 +6,14 @@ import time
 
 
 def gitSync():
-    os.chdir("C:/Users/pillai_amal/Documents/notes/vonB2")
+    os.chdir("put your repo directory here")
     timenow = datetime.datetime.now()
     os.system("git add .")
     print("git add. - COMPLETE ")
-    os.system("git commit -m 'automated commit at {}'".format(str(timenow)))
+    os.system('git commit -am "automated commit at {}"'.format(str(timenow)))
     print("git commit - COMPLETE")
     os.system("git push")
     print("git push -COMPLETE")
-    time.sleep(1800)
     print("\n \n Waiting for 30 minutes for next commit ... ")
+    time.sleep(1800)
+
