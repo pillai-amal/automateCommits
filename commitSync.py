@@ -4,7 +4,7 @@ import datetime
 import time
 
 def gitSync(counter):
-    os.chdir("c:/Users/pillai_amal/Documents/notes/vonB2")
+    os.chdir("c:/Users/pillai_amal/<puturFolderhere>")
     timenow = datetime.datetime.now()
     os.system("git add .")
     print("git add. - COMPLETE ")
