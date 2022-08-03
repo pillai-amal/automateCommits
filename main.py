@@ -1,4 +1,10 @@
 from commitSync import *
 
+counter=0
+
 if __name__ == "__main__":
-    gitSync()
+    while True:
+        ++counter
+        gitSync()
+        print("\n Number of commits done : {}".format(counter))
+

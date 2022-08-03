@@ -1,12 +1,10 @@
 from ast import main
-from ctypes.wintypes import PINT
 import os
 import datetime
 import time
 
-
 def gitSync():
-    os.chdir("put your repo directory here")
+    os.chdir("c:/Users/pillai_amal/")
     timenow = datetime.datetime.now()
     os.system("git add .")
     print("git add. - COMPLETE ")
@@ -14,6 +12,7 @@ def gitSync():
     print("git commit - COMPLETE")
     os.system("git push")
     print("git push -COMPLETE")
-    print("\n \n Waiting for 30 minutes for next commit ... ")
-    time.sleep(1800)
+    //os.system("cls")
+    print("\n \n Waiting for 10 minutes for next commit ... ")
+    time.sleep(600)
 
