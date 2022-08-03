@@ -3,8 +3,8 @@ import os
 import datetime
 import time
 
-def gitSync():
-    os.chdir("c:/Users/pillai_amal/")
+def gitSync(counter):
+    os.chdir("c:/Users/pillai_amal/Documents/notes/vonB2")
     timenow = datetime.datetime.now()
     os.system("git add .")
     print("git add. - COMPLETE ")
@@ -12,7 +12,8 @@ def gitSync():
     print("git commit - COMPLETE")
     os.system("git push")
     print("git push -COMPLETE")
-    //os.system("cls")
+    os.system("cls")
     print("\n \n Waiting for 10 minutes for next commit ... ")
+    print("\n\n commit number : {}".format(counter))
     time.sleep(600)
 
